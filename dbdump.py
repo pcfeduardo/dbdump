@@ -13,13 +13,12 @@ HOW TO USE:
 # source .venv/bin/activate
 
 2 - Install python dependencies
-# pip install python-decouple pyyaml
+# pip install pyyaml
 
 3 - Configure config.yaml
 4 - Run ./dbdump.py
 
-sed 's/\sDEFINER=`[^`]*`@`[^`]*`//g' -i ${DB_FILE}
-
+sed 's/\sDEFINER=`[^`]*`@`[^`]*`//g' -i db_file.sql
 '''
 __program__ = 'dbdump'
 __author__ = 'pcfeduardo'
