@@ -18,6 +18,9 @@ HOW TO USE:
 3 - Configure config.yaml
 4 - Run ./dbdump.py
 
+NOTES:
+If at some point you are going to restore the database and need to remove DEFINER from your exports, please use the following command:
+
 sed 's/\sDEFINER=`[^`]*`@`[^`]*`//g' -i db_file.sql
 '''
 __program__ = 'dbdump'
