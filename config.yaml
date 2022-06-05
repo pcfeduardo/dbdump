@@ -1,0 +1,16 @@
+databases:
+  - db_demo_01_prd:
+      db_host: "127.0.0.1"
+      db_name: "db_demo_01_prd"
+      db_username: "db_username_here"
+      db_password: "db_password_here"
+      dump_dir: "./dumps"
+      excluded_tables:
+        - exclude_table_01
+        - exclude_table_02
+  - db_demo_02_prd:
+      db_host: "127.0.0.1"
+      db_name: "db_demo_02_prd"
+      db_username: "db_username_here"
+      db_password: "db_password_here"
+      dump_dir: "./dumps"
